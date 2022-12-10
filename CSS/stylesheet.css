@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+}
+
+/* Header......>! */
+.header-container {
+  height: 10vh;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  /* z-index: -1; */
+}
+
+.nav-header ul {
+  display: flex;
+  column-gap: 30px;
+  list-style-type: none;
+  color: hsl(233, 8%, 62%);
+  height: 10vh;
+
+  align-items: center;
+}
+li {
+  height: 10vh;
+  display: flex;
+
+  align-items: center;
+}
+.nav-header li:hover {
+  border-bottom: 4px solid hsl(136, 65%, 51%);
+  border-image-slice: 1;
+  cursor: pointer;
+  color: black;
+}
+
+.btn {
+  font-size: 18px;
+  color: hsl(0, 0%, 98%);
+  width: 10em;
+  height: 2em;
+  border: none;
+  border-radius: 18px;
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 66%),
+    hsl(192, 70%, 66%)
+  );
+}
+
+
+/* Footer */
+
+footer {
+  background-color: rgba(5, 12, 78, 0.979);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo-footer {
+  width: 45vh;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 25%;
+}
+
+.meno-footer {
+  color: white;
+  width: 45vh;
+  height: 25vh;
+  display: flex;
+}
+
+.menu-container-footer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 17%;
+  row-gap: 15px;
+}
+
+.btn-footer {
+  background-color: rgb(211, 52, 40);
+  width: 45vh;
+}
+
+.span-font-footer {
+  font-size: 13px;
+  width: 100px;
+}
+
+.span-font-footer:hover {
+  cursor: pointer;
+  color: rgb(74, 241, 74);
+}
+
+.socialapp {
+  display: flex;
+  column-gap: 10%;
+  flex-direction: row;
+  justify-content: normal;
+  width: 50%;
+}
+
+.picsocial-footer:hover {
+  cursor: pointer;
+  background-color: rgb(74, 241, 74);
+}
+
+.btn-footer {
+  font-size: 18px;
+  color: hsl(0, 0%, 98%);
+  width: 10em;
+  height: 2em;
+  border: none;
+  border-radius: 18px;
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+  cursor: pointer;
+}
+
+.btn-footer:hover {
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 66%),
+    hsl(192, 70%, 66%)
+  );
+}
+
+.request-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5%;
+  width: 45vh;
+  height: 25vh;
+}
+
+.font-footer {
+  font-size: 12px;
+  color: hsl(233, 8%, 62%);
+}
+
+
+/* !.................Section.............! */
+
+.section-intro {
+  height: 70vh;
+  border:1px solid black;
+  background-color: aqua;
+  display: flex;
+}
+
+.main-intro-1{
+  border:1px solid rgb(235, 27, 27);
+  width: 50%;
+  height: 100%;
+  background-color: rgb(255, 123, 0);
+}
+.main-intro-2{
+border:1px solid rgb(235, 27, 27);
+  width: 50%;
+  height: 100%;
+  background-color: rgb(251, 255, 0);
+  
+}
+
+.intro-background-image{
+background-image: url(/images/bg-intro-desktop.svg);
+background-position: left;
+}
+
+.intro-imagemob{
+  position: relative;
+  top:10%
+}
+
+/* !..............Media Responsive...................! */
+
+@media (max-width: 400px) {
+  .logo-footer {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18%;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .socialapp {
+    display: flex;
+    column-gap: 10%;
+    flex-direction: row;
+    justify-content: normal;
+    width: 50%;
+    margin-top: 29px;
+  }
+  .meno-footer {
+    color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-container-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 11%;
+    row-gap: 22px;
+  }
+
+  .span-font-footer {
+    font-size: 16px;
+    text-align: center;
+    width: auto;
+  }
+}
